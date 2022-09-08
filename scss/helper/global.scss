@@ -1,0 +1,16 @@
+body{
+    font-family: $font-family-first;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #FFF;
+}
+
+.container{
+    max-width:$max-width;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
