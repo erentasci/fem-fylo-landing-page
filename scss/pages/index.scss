@@ -8,7 +8,7 @@
     @include mq("tablet"){
         font-size: 16px;
         text-align: center;
-        margin-top: 10px;
+        padding-top: 200px;
 
     }
 
@@ -153,13 +153,13 @@
             max-width: 90%;
             max-height: 450px;
             margin-left: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 100px;
 
             @include mq("tablet"){
                 max-height: 70vh;
                 max-width: 60vw;
-                margin-top: 50px;
-                margin-bottom: 20px;
+                margin-top: 200px;
+                padding-top: 100px;
             }
     
         }
@@ -172,8 +172,8 @@
     width: 100%;
     height: 700px;
     background-color: #F8F8FE;
-    padding-bottom: 300px;
-    margin-bottom: 200px;
+
+
     @include mq("desktop"){
         width: 100vw;
         height: 100%;
@@ -320,8 +320,8 @@
     }
 
     &__image{
-        width: 40vw;
-        height: 50vh;
+        max-width: 90%;
+        max-height: 450px;
         //background-color: green;
         display: flex;
         justify-content: center;
@@ -344,16 +344,13 @@
  
 
         img{
-            width: 60vw;
-            height: 60vh;
+            width: 100%;
+            height: 100%;
             @include mq("desktop"){
-                width: 60vw;
-                height: 40vh;
+
                 padding: 20px 40px;
             }
             @include mq("tablet"){
-                width: 300px;
-                height: 300px;
                 margin: 0;
                 padding: 0;
             }
