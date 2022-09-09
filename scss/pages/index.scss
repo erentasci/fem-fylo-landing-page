@@ -46,7 +46,9 @@
 
         @include mq("tablet"){
             width: 90vw;
+            margin-bottom: 200px;
         }
+
 
 
 
@@ -175,29 +177,26 @@
     @include mq("desktop"){
         width: 100vw;
         height: 100%;
+
     }
 
     @include mq("tablet"){
-        margin-top: 200px;
-        
+        margin-top: 250px;
     }
+
 
     &_img{
         background-color: white;
+        @include mq("tablet"){
+            padding-top: 50px;
+        }
 
-        
-
+    
     }
 
     img{
-        width: 100vw;
-        height: 10vh;
-
-
-
- 
-
-
+        width: 100%;
+        height: auto;
     }
 
     .container{
@@ -224,7 +223,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-top: 45px;
+        margin-top: 45px; margin-top: 45px;
         margin-left: 10px;
        
 
@@ -234,6 +233,10 @@
            justify-content: center;
            align-items: center;
 
+        }
+
+        @include mq("tablet"){
+            margin-top: 0;
         }
 
         &__info{
@@ -274,8 +277,8 @@
        &__testimational{
         display: flex;
         flex-direction: column;
-        max-width: 350px;
-        max-height: 250px;
+        width: 350px;
+        height: 250px;
         background-color: white;
         border-radius: 6px;
         padding: 20px 10px 20px 20px;
@@ -283,6 +286,7 @@
         line-height: 1.5em;
         font-size: 15px;
         box-shadow: 11px 10px 12px -5px rgba(0,0,0,0.1);
+
 
         img{
             width: 20px;
@@ -340,10 +344,11 @@
  
 
         img{
-            max-width: 50vw;
+            width: 60vw;
             height: 60vh;
             @include mq("desktop"){
-                max-width: 60vw;
+                width: 60vw;
+                height: 40vh;
                 padding: 20px 40px;
             }
             @include mq("tablet"){
