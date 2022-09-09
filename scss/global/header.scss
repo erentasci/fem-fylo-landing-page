@@ -8,8 +8,10 @@
         flex-direction: row;
         align-items: center;
         padding-top: 40px;
-        padding-bottom: 40px;
         padding-right:0;
+        @include mq("tablet"){
+            padding-bottom: 40px;
+        }
     }
 
     &__logo{
@@ -32,7 +34,7 @@
             color: $color-dark-gray;
             margin-left: 60px;
             @include mq("tablet"){
-                margin-left: 20px;
+                margin-left: 10px;
                 font-size: 16px;
             }
             &:hover{

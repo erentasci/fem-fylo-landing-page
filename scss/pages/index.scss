@@ -3,12 +3,16 @@
     width: 100%;
     height: 550px;
     margin-bottom: 50px;
-    //background-color:rgb(228, 224, 224);
+    background-color:white;
 
     @include mq("tablet"){
         font-size: 16px;
         text-align: center;
+        margin-top: 10px;
+
     }
+
+    
 
 
     .container{
@@ -21,6 +25,11 @@
             height: 100vh;
             flex-direction: column-reverse;
         }
+
+        @include mq("desktop"){
+            padding: 20px 50px;
+        }
+    
 
     }
 
@@ -39,21 +48,32 @@
             width: 90vw;
         }
 
-        @include mq("tablet"){
-            text-align: center;
-            padding: 0 20px;
-        }
-
 
 
         h1{
             font-family: $font-family-second;
             font-weight: 700;
-            line-height: 1.4em;
+            line-height: 1.5em;
+            text-align: left;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include mq("tablet"){
+                text-align: center;
+            }
         }
         p{
-            margin-top: 20px;
+            font-family: $font-family-first;
+            font-weight: 700;            
+            margin-top: 10px;
+            line-height: 1.5em;
+            text-align:left;
             padding-right: 40px;
+
+            @include mq("tablet"){
+                margin-left: 15px;
+                text-align: center;
+                padding: 0 14px;
+            }
         }
 
         &__form{
@@ -67,8 +87,9 @@
 
             @include mq("tablet"){
                 flex-direction: column;
-                width: 90vw;
+                width: 80vw;
                 padding: 0 40px;
+                margin-bottom: 100px;
             }
 
             input{
@@ -86,15 +107,18 @@
                   }
 
                   @include mq("tablet"){
-                    width:80vw;
+                    width:75vw;
                     margin-left: 0;
                     margin-top: 70px;
-                    padding: 10px 0;
+                    padding: 20px 0;
                     padding-left: 30px;
                 }
             }
             button{
                 height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-grow: 2.5;
                 margin-left: 20px;
                 padding: 6px 0;
@@ -104,9 +128,9 @@
                 color: $color-light-grayish-blue;
                 
                 @include mq("tablet"){
-                    width: 80vw;
+                    width: 75vw;
                     margin-left: 0;
-                    padding: 15px 10px;
+                    padding: 20px 10px;
                     margin-top: 20px;
                 }
             }
@@ -138,4 +162,199 @@
     
         }
     }
+}
+
+
+.Productive{
+
+    width: 100%;
+    height: 700px;
+    background-color: #F8F8FE;
+    padding-bottom: 300px;
+    margin-bottom: 200px;
+    @include mq("desktop"){
+        width: 100vw;
+        height: 100%;
+    }
+
+    @include mq("tablet"){
+        margin-top: 200px;
+        
+    }
+
+    &_img{
+        background-color: white;
+
+        
+
+    }
+
+    img{
+        width: 100vw;
+        height: 10vh;
+
+
+
+ 
+
+
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding-top: 150px;
+
+        @include mq("desktop"){
+            width: 100vw;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+        }
+
+
+    }
+
+    &__text{
+        width: 60vw;
+        height: 100%;
+        //background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 45px;
+        margin-left: 10px;
+       
+
+        @include mq("desktop"){
+           margin-top: 0;
+           margin-left: 0;
+           justify-content: center;
+           align-items: center;
+
+        }
+
+        &__info{
+            h1,p,a{
+                font-family: $font-family-first;
+                font-weight: bold;
+                color: $color-very-dark-blue;
+                line-height: 1.5em;
+            }
+            h1{
+                font-size:2em;
+                word-spacing: .1em;
+                margin-bottom: 30px;
+                font-size: 32px;
+
+            }
+            p{
+                font-weight:700;
+                margin-bottom: 10px;
+                margin-right: 70px;
+                font-size: 15px;
+                @include mq("desktop"){
+                    margin-right: 0;
+                }
+            }
+            a{
+                color: $color-moderat-cyan;
+                padding-bottom: 5px;
+                border-bottom: 1px solid currentColor;
+                cursor: pointer;
+                .content_arrow{
+                    font-size: 13px;
+                    margin-left: 5px;
+                }
+            }
+
+        }
+       &__testimational{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        max-height: 250px;
+        background-color: white;
+        border-radius: 6px;
+        padding: 20px 10px 20px 20px;
+        margin-top: 50px;
+        line-height: 1.5em;
+        font-size: 15px;
+        box-shadow: 11px 10px 12px -5px rgba(0,0,0,0.1);
+
+        img{
+            width: 20px;
+            height: 20px;
+            
+        }
+        img,p{
+            margin-bottom: 10px;
+        }
+        &__info{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            padding: 3px 0;
+
+            img{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                
+            }
+
+            &__extra{
+               display: flex;
+               flex-direction: column;
+               margin-left: 10px;
+               line-height: 1.2em;
+            }
+        }
+       }
+    }
+
+    &__image{
+        width: 40vw;
+        height: 50vh;
+        //background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 50px;
+
+        @include mq("desktop"){
+            padding: 0;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            width: 60vw;
+            height: 40vh;
+        }
+
+        @include mq("tablet"){
+            margin-top: 100px;
+            width: 300px;
+            height: 200px;
+         }
+ 
+
+        img{
+            max-width: 50vw;
+            height: 60vh;
+            @include mq("desktop"){
+                max-width: 60vw;
+                padding: 20px 40px;
+            }
+            @include mq("tablet"){
+                width: 300px;
+                height: 300px;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+    }
+
+
 }
