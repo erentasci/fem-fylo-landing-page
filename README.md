@@ -21,3 +21,5 @@ Website Screenshot:
 ✅ Header Section
 <br>
 ✅ Main Section
+<br>
+✅ Second Main Section
