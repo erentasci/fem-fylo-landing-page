@@ -23,3 +23,5 @@ Website Screenshot:
 ✅ Main Section
 <br>
 ✅ Second Main Section
+<br>
+✅ Contact Section
