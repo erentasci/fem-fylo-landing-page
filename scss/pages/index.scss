@@ -116,9 +116,6 @@
                     padding-left: 30px;
                 }
 
-                @include mq("desktop"){
-                     width:20vw;
-                }
 
 
             }
@@ -143,9 +140,10 @@
                 }
 
                 @include mq("desktop"){
-                    margin-left: 5px;
-                    width: 10vw;
+                    min-width: 20vw;
                 }
+
+
             }
         }
 
@@ -181,7 +179,8 @@
 .Productive{
 
     width: 100%;
-    height: 600px;
+    height: 700px;
+    padding-bottom: 200px;
     background-color: #F8F8FE;
 
 
@@ -198,11 +197,11 @@
 
     &_img{
         background-color: white;
+
         @include mq("tablet"){
             padding-top: 50px;
         }
 
-    
     }
 
     img{
@@ -380,4 +379,127 @@
     }
 
 
+}
+
+.Contact{
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 60px;
+    // padding-bottom: 60px;
+    background-color: $color-desaturated-blue;
+    line-height: 1.5em;
+    font-family: $font-family-second;
+    font-size: 16px;
+    color: white;
+    
+    @include mq("tablet"){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+    .container{
+        //background-color: gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px;
+
+
+        @include mq("tablet"){
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+    }
+
+    &__text{
+        width: 60vw;
+        height: 100%;
+       //background-color: red;
+        padding: 40px 200px 40px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2{
+            margin-bottom: 20px;
+        }
+        
+
+
+        @include mq("tablet"){
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 40px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+
+        }
+
+        @include mq("large"){
+            padding-right:40px
+        }
+
+        @include mq("tablet"){
+            padding: 20px 40px ;
+        }
+    }
+
+    &__form{
+        width: 40vw;
+        height: 100%;
+        //background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 10px;
+
+        @include mq("tablet"){
+            min-width: 70vw;
+        }
+
+        input{
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            padding: 12px 20px;
+            font-size: 14px;
+            box-shadow: 11px 10px 12px -5px rgba(0,0,0,0.1);
+
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                opacity: .7; /* Firefox */
+              }
+        }
+        button{
+            min-width: 60%;
+            background-color:$color-bright-blue;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 12px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 11px 10px 12px -5px rgba(0,0,0,0.1);
+
+            @include mq("tablet"){
+                width: 100%;
+            }
+
+        }
+    }
 }
