@@ -1,7 +1,7 @@
 # fem-fylo-landing-page
 Frontend Mentor | Fylo Landing Page
 
-I tried to responsively code the landing page design at https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5
+I tried to code the landing page design at https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5 as pixel perfect and responsive
 
 Live URL 💻 : https://erentasci-fem-fylo-landing-page.vercel.app/
 
@@ -23,3 +23,5 @@ Website Screenshot:
 ✅ Main Section
 <br>
 ✅ Second Main Section
+<br>
+✅ Contact Section
