@@ -1,0 +1,145 @@
+.Footer{
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-color: $color-very-dark-blue;
+    font-size: 16px;
+
+    @include mq("desktop"){
+        font-size: 15px;
+    }
+
+    @include mq("tablet"){
+        height: auto;
+        width: 100vw;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mq("tablet"){
+            padding: 30px 20px;
+            height: auto;
+            flex-direction: column;
+        }
+    }
+
+    &__info{
+        min-height: 200px;
+        height: 350px;
+        width: 300px;
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        @include mq("tablet"){
+            padding: 20px;
+            align-self: flex-start;
+            align-items:flex-start;
+            height: auto;
+            width: 90vw;
+        }
+
+
+        .footer-logo{
+            width: 160px;
+            height: 50px;
+            margin-top: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        &__text{
+
+
+
+            &__item{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                span{
+                    margin-left: 10px;
+                }
+
+            }
+        }
+    }
+    &__menu_item{
+        height: auto;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-self: baseline;
+        padding: 150px 0 20px 20px;
+        margin-top: 30px;
+
+        @include mq("tablet"){
+            width: 90vw;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 20px;
+            margin-top: 5px;
+        }
+
+
+        a{
+            margin-top: 20px;
+        }
+
+    }
+    &__contact{
+        height: 50px;
+        width: 200px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 30px;
+        align-self: baseline;
+
+        @include mq("desktop"){
+            margin-right: 0;
+        }
+
+        @include mq("tablet"){
+            width: 90vw;
+            justify-content: center;
+        }
+
+        a{
+            width: 28px;
+            height: 28px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin-left: 15px;
+            display: flex;
+            justify-content: center;
+
+            &:hover{
+                text-decoration:none;
+            }
+
+            &:hover{
+                border-color: hsla(224, 73%, 76%, 0.758);
+                color: hsla(224, 73%, 76%, 0.758);
+            }
+
+            i{
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+        }
+
+    }
+}
