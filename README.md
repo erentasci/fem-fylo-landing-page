@@ -25,3 +25,8 @@ Website Screenshot:
 ✅ Second Main Section
 <br>
 ✅ Contact Section
+<br>
+✅ Footer Section
+<br>
+✅ Responsive Design
+
